@@ -59,7 +59,41 @@
         
         }//end test 3
 
+        // 4. Input two strings, input two has multiple words and multiple matches, the returned integer is incremented to the same number of matches.
+        // input: "foo", "foo bar foo" output: 2
+        function test_RepeatCounter_multMatch()
+        {
+            
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "foo";
+            $input2 = "foo bar foo";
+            
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input1, $input2);
+            
+            //Assert
+            $this->assertEquals(2, $result);
+        
+        }//end test 5
 
+        //5. Input two strings, partial word matches do not increment the returned integer.
+        // input: "foo", "foobar" output: 0
+        function test_RepeatCounter_noPartialMatches()
+        {
+            
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "foo";
+            $input2 = "foobar";
+            
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input1, $input2);
+            
+            //Assert
+            $this->assertEquals(0, $result);
+        
+        }//end test 5
 
 
 
