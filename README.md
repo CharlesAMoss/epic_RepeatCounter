@@ -1,4 +1,4 @@
-# _ Repeat Counter _
+# _Repeat Counter_
 
 ##### _Compare a list of words to a single word and display how many times the word appears in the list of words. , 8/14/2015_
 
