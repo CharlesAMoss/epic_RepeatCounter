@@ -1,12 +1,13 @@
-# _ ʕ •́؈•̀ ₎ _
+# _ Repeat Counter _
 
-##### _Compare a body of text or list of words to a user single word input. , 8/13/2015_
+##### _Compare a list of words to a single word and display how many times the word appears in the list of words. , 8/13/2015_
 
-#### By Charles Moss 
+#### By Charles Moss
 
 ## Description
 
-_User inputs a single word and body of text, program returns any anagrams that may be found in the body of text.  **(exp. input: "deadbeef" and input: "feedbead more beef" prints: "feedbead is an anagram of deadbeef")**_
+_User inputs a single word and body of text, program returns the number of times that the word  may be found in the body of text. **(exp. input: "buffalo" and input: "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo" Output: 8 )**_
+
 
 ## Setup
 
@@ -24,14 +25,18 @@ _This project makes use of PHP, the testing framework [PHPUnit](https://phpunit.
 
 ## To Do
 
-_ _   
+_ _  
+
+## Aside
+
+* [Buffalo?](https://en.wikipedia.org/wiki/Buffalo_buffalo_Buffalo_buffalo_buffalo_buffalo_Buffalo_buffalo)
 
 
 ### Legal
 
 
 
-Copyright (c) 2015 Charles A Moss & Mike Chastain
+Copyright (c) 2015 Charles A Moss 
 
 This software is licensed under the MIT license.
 
