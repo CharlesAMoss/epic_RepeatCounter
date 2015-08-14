@@ -25,7 +25,7 @@
 
         // 2. Input two strings, input one and two match, the returned integer is incremented to one. 
         // input: "foo", "foo" output: 1
-        function test_RepeatCounter_findMatch()
+        function test_RepeatCounter_matchSame()
         {
             
             //Arrange
@@ -40,6 +40,26 @@
             $this->assertEquals(1, $result);
         
         }//end test 2
+
+        // 3. Input two strings, input two has multiple words but only one match, the returned integer is incremented to one.
+        //input: "foo", "foo bar" output: 1
+        function test_RepeatCounter_findMatch()
+        {
+            
+            //Arrange
+            $test_RepeatCounter = new RepeatCounter;
+            $input1 = "foo";
+            $input2 = "foo bar";
+            
+            //Act
+            $result = $test_RepeatCounter->countRepeats($input1, $input2);
+            
+            //Assert
+            $this->assertEquals(1, $result);
+        
+        }//end test 3
+
+
 
 
 
