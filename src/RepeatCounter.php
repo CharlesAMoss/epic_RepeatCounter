@@ -5,7 +5,7 @@
 		function countRepeats($word, $list)
 		{
 
-		//	$count = 0;
+			$count = 0;
 
 			$word = strtoupper ($word);
 			$list = strtoupper ($list);

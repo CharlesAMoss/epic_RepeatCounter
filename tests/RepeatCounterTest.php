@@ -18,7 +18,7 @@
             
             //Assert
             $this->assertTrue(is_int($result));
-            $this->assertEquals(0);
+            $this->assertEquals(0, $result);
         
         }//end test
 
