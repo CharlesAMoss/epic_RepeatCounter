@@ -13,8 +13,6 @@
 			 
 			$split_list = preg_split('/\s|(?<=\w)(?=[.,:;!?)])|(?<=[.,"!()?\x{201C}])/u', $list, -1, PREG_SPLIT_NO_EMPTY);
 
-			print_r($split_list);
-
 			foreach ($split_list as $possible_match) 
 			{
 				
@@ -32,6 +30,5 @@
 		}//end countRepeats
 
 	}//end RepeatCounter
-
 
 ?>

@@ -1,6 +1,7 @@
 <?php
+    
     require_once __DIR__."/../vendor/autoload.php";
-    require_once __DIR__."/../src/AnagramChecker.php";
+    require_once __DIR__."/../src/RepeatCounter.php";
     
     $app = new Silex\Application();
     $app['debug'] = true;
@@ -14,9 +15,9 @@
     });
     
     $app->get("/results", function() use ($app) {
-        $my_anagram = new AnagramChecker();
-        $anagram_array = $my_anagram->checkAnagram($_GET['word'], $_GET['blob']);
-        return $app['twig']->render('results.html.twig', array('result' => $anagram_array));
+        $how_many = new RepeatCounter();
+        $how_many = $how_many->countRepeats($_GET['word'], $_GET['blob']);
+        return $app['twig']->render('results.html.twig', array('result' => $how_many));
     });
 
     return $app;
