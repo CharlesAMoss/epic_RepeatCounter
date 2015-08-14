@@ -1,6 +1,7 @@
 <?php	
 
-	Class RepeatCounter {
+	Class RepeatCounter 
+	{
 
 		function countRepeats($word, $list)
 		{
@@ -9,14 +10,23 @@
 
 			$word = strtoupper ($word);
 			$list = strtoupper ($list);
+			 
+			$split_list = preg_split('/\s|(?<=\w)(?=[.,:;!?)])|(?<=[.,"!()?\x{201C}])/u', $list, -1, PREG_SPLIT_NO_EMPTY);
 
-			if ($word === $list) {
+			print_r($split_list);
 
-				$count+= 1;
+			foreach ($split_list as $possible_match) 
+			{
+				
+				if ($word === $possible_match) 
+				{
 
-			}//end if
+					$count+= 1;
 
+				}//end if
 
+			}//end foreach
+			
 			return $count; 
 
 		}//end countRepeats
