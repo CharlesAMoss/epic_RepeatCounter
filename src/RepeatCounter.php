@@ -10,7 +10,11 @@
 			$word = strtoupper ($word);
 			$list = strtoupper ($list);
 
+			if ($word === $list) {
 
+				$count+= 1;
+
+			}//end if
 
 
 			return $count; 
