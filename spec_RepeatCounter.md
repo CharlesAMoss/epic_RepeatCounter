@@ -19,6 +19,6 @@ spec title
 	- input: "foo", "foo bar foo"
 	- output: 2
 
-5. Input two strings, partial word matches do not increment to the returned integer
+5. Input two strings, partial word matches do not increment the returned integer.
 	- input: "foo", "foobar"
 	- output: 0
