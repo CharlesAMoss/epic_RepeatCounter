@@ -1,12 +1,12 @@
 # _ Repeat Counter _
 
-##### _Compare a list of words to a single word and display how many times the word appears in the list of words. , 8/13/2015_
+##### _Compare a list of words to a single word and display how many times the word appears in the list of words. , 8/14/2015_
 
 #### By Charles Moss
 
 ## Description
 
-_User inputs a single word and body of text, program returns the number of times that the word  may be found in the body of text. **(exp. input: "buffalo" and input: "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo" Output: 8 )**_
+_User inputs a single word and body of text, program returns the number of times that the word  may be found in the body of text. **(exp. input: "buffalo" and input: "Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo." Output: 8 )**_
 
 
 ## Setup
@@ -22,10 +22,6 @@ _You then only need to start up a local PHP server from within the "web" directo
 ## Technologies Used
 
 _This project makes use of PHP, the testing framework [PHPUnit](https://phpunit.de/), the micro-framework [Silex](http://silex.sensiolabs.org/), and uses [Twig](http://twig.sensiolabs.org/) templates._
-
-## To Do
-
-_ _  
 
 ## Aside
 
